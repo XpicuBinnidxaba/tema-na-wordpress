@@ -1,0 +1,38 @@
+.modal-na{
+	color: @naranja;
+	
+	.barraDer{
+		border-right: 5px solid @naranja;
+		
+		@media (max-width: @mq-xs-max){
+			border: none;
+		}
+	}
+	.modal-content{
+		background: @gris;
+		
+		.modal-body{
+			padding-top: 0px;
+		}
+	}
+	
+	
+	form{
+		label{
+			color: @naranja;
+			font-size: 10px;
+		}
+		
+		input[type="text"], textarea{
+			background: none;
+			border: 1px solid @naranja;
+			border-radius: 10px;
+		}
+	}
+	
+	
+	.btn-naranja{
+		background: @naranja;
+		color: white;
+	}
+}

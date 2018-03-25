@@ -1,0 +1,119 @@
+.uno{
+	.menuPrincipal{
+		height: 130px;
+		margin-bottom: 0px;
+		
+		@media (max-width: @mq-xs-max){
+			height: 80px;
+		}
+		
+		.navbar-header{
+			@media (max-width: @mq-xs-max){
+				text-align: left;
+			}
+			text-align: center;
+			width: 100%;
+			font-family: Roboto;
+			
+			.brand{
+				img{
+					margin: 10px;
+					width: 150px;
+					@media (max-width: @mq-xs-max){
+						width: 100px;
+					}
+				}
+			}
+		}	
+		
+		.navbar-collapse{
+			ul{
+				text-align: center;
+				li{
+					display: inline;
+					
+					a{
+						color: @naranja;
+						text-transform: uppercase;
+						display:inline-block;
+						padding:10px;
+						font-weight: bold;
+					}
+				}
+			}
+		}	
+	}
+	
+	.carousel{
+		background-image: url('../img/slider4.jpg');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position:center bottom;
+		
+		.item{
+			height: 550px;
+			overflow-y: hidden;
+			
+			.descripcion{
+				text-align: center;
+				position: absolute;
+				top: 10%;
+				height: 80%;
+				overflow-y: scroll;
+				
+				h1{
+					color: white;
+					font-size: 45px;
+					margin-bottom: 50px;
+				}
+				
+				p{
+					font-size: 20px;
+					color: @grisBackground;
+					
+					@media (max-width: @mq-xs-max){
+						font-size: 16px;
+					}
+				}
+			}
+			
+			.btn{
+				text-transform: uppercase;
+			}
+		}
+	}
+	
+	.body{
+		min-height: 300px;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		background: @grisBackground;
+		font-size: 16px;
+		
+		img.img-responsive{
+			margin: 0 auto;
+		}
+		
+		p{
+			margin-bottom: 20px;
+		}
+		
+		h1{
+			color: @naranja;
+		}
+		
+		.servicios{
+			.item{
+				text-align: center;
+				
+				span{
+					width: 100%;
+					&.nombre{
+						color: @rojo;
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+}

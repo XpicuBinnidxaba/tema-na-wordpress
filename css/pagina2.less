@@ -5,11 +5,19 @@
 		background-image: linear-gradient(to bottom,#fff 0,#fff 100%);
 		-webkit-box-shadow:	none;
 		box-shadow:	none;
+		
+		&.scrollTop{
+			background-color: @menu_background;
+			background-position: center bottom;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
 	}
 
 	.navbar{
 		margin-bottom: 0;
 		border:	0;
+		background: none;
 
 		.navbar-brand {
 			height: 6em;
@@ -32,12 +40,14 @@
 		}
 
 		.contenido-menu {
-			background-color: @menu_background;
+			//background-color: @menu_background;
 			color: @naranja;
+			
+			background: white;
+			height: 100%;
 
-			.menu {
 				font-family: Roboto;
-				padding-bottom: 30px;
+				//padding-bottom: 30px;
 
 				ul {
 					padding: 0;
@@ -84,22 +94,26 @@
 						}
 					}
 				}
-			}
 		}
 		&:first-child + div {
-			padding-top: 8em;
+			padding-top: 94px;
+		}
+		
+		.navbar-collapse {
+			height: 800px;
+
+			max-height: none;
 		}
 	}
 	/*FIN ESTILO top-menu*/
 
 	/*INICIO ESTILO central*/
-	.top-backgroung-image {
-		height: 20em;
-		background-image: url('img/FondoNA.jpg');
-		background-position: center top;
-		background-size: cover;
-		background-repeat: no-repeat;
-		background-attachment: scroll;
+	.top-background-image {
+		width: 100%;
+		img{
+			width: 100%;
+			min-height: 200px;
+		}
 	}
 	.titulo {
 

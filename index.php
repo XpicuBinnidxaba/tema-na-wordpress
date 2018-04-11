@@ -13,8 +13,8 @@
  * @subpackage Tema_NA
  * @since Tema NA 1.0
  */
-
-get_header(); ?>
+?>
+<?php get_header(); ?>
 
 <body class="pagina2">
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -29,7 +29,7 @@ get_header(); ?>
 	      <span class="icon-bar"></span>
 	    </button>
 	    <a class="navbar-brand" href="#">
-	    	<img src="img\LogoNA.png" alt="Logo N.A.">
+	    	<img src="<?= get_template_directory_uri() ?>/img/LogoNA.png" alt="Logo N.A.">
 	    </a>
 	  </div>
 
@@ -50,37 +50,12 @@ wp_nav_menu( array(
   )
 );
 ?>
-
-
-	  <div class="collapse navbar-collapse contenido-menu">
-			<div class="menu">
-				<ul class="nav navbar-nav">
-		      <li class="dropdown">
-		        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-		          Nosotros <b class="caret"></b>
-		        </a>
-		        <ul class="dropdown-menu">
-		          <li><a href="#">Nosotros #1</a></li>
-		          <li><a href="#">Nosotros #2</a></li>
-		          <li class="divider"></li>
-		          <li><a href="#">Nosotros #3</a></li>
-		        </ul>
-		      </li>
-					<li><a href="#">Servicios</a></li>
-					<li><a href="#">Testimonios</a></li>
-					<li><a href="#">Datos y Estad&iacutesticas</a></li>
-					<li><a href="#">Esc&uacutechanos</a></li>
-					<li><a href="#">Ub&iacutecanos</a></li>
-		    </ul>
-			</div>
-	  </div>
 	</div>
 </nav>
 
 
-	<div class="container-fluid">
-		<div class="row top-backgroung-image col-sm-12">
-		</div>
+	<div class="top-background-image">
+		<img src="<?= get_template_directory_uri() ?>/img/FondoNa.jpg" class="img-responsive" />
 	</div>
 
 	<div class="container">
@@ -149,3 +124,5 @@ wp_nav_menu( array(
 	</div>
 
 <?php get_footer(); ?>
+</body>
+</html>

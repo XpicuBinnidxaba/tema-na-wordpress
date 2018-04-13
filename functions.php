@@ -25,4 +25,6 @@ function additional_custom_styles(){
 add_action( 'wp_enqueue_scripts', 'additional_custom_styles');
 
 require_once( get_template_directory() . '/framework/menus.php' );
+require_once( get_template_directory() . '/framework/widgets.php' );
+require_once( get_template_directory() . '/framework/filtros.php' );
 ?>

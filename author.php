@@ -6,7 +6,10 @@
 		<?php wp_nav_menu( array( 'theme_location' => 'menu_principal' ) ); ?>
 	</ul>
 </nav>
-<h1>HOME</h1>
+<!-- Autor -->
+<p>Posts de <strong><?php echo get_the_author(); ?></strong></p>
+
+<h1>Author.php</h1>
 <?php if ( have_posts() ) : ?>
   <section>
     <?php while ( have_posts() ) : the_post(); ?>
@@ -18,7 +21,6 @@
         </header>
         <?php the_excerpt(); ?>
         <footer>
-					<?php the_tags('<ul><li>','</li><li>','</li></ul>'); ?>
             <address>Por <?php the_author_posts_link() ?></address>
         </footer>
       </article>

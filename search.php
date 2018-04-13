@@ -6,7 +6,9 @@
 		<?php wp_nav_menu( array( 'theme_location' => 'menu_principal' ) ); ?>
 	</ul>
 </nav>
-<h1>HOME</h1>
+<!-- Búsqueda -->
+<p>Resultados de búsqueda para <strong><?php echo get_search_query() ?></strong></p>
+<h1>SEARCH.PHP</h1>
 <?php if ( have_posts() ) : ?>
   <section>
     <?php while ( have_posts() ) : the_post(); ?>

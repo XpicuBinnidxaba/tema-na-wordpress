@@ -1,4 +1,4 @@
 <aside>
   <!-- Zona de Widgets -->
-  <?php dynamic_sidebar('sidebar'); ?>
+  <?php dynamic_sidebar('sidebarx'); ?>
 </aside>

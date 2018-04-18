@@ -7,8 +7,8 @@
 function mis_widgets(){
  register_sidebar(
    array(
-       'name'          => __( 'Sidebar' ),
-       'id'            => 'sidebar',
+       'name'          => __( 'Sidebarx' ),
+       'id'            => 'sidebarx',
        'before_widget' => '<div class="widget">',
        'after_widget'  => '</div>',
        'before_title'  => '<h3>',

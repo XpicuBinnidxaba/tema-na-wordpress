@@ -58,6 +58,10 @@ wp_nav_menu( array(
 		<img src="<?= get_template_directory_uri() ?>/img/FondoNa.jpg" class="img-responsive" />
 	</div>
 
+	<div>
+		<h1>INDEX.PHP</h1>
+	</div>
+
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-12 col-sm-9 ">

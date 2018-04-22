@@ -38,10 +38,11 @@
 						)
 					);
 				?>
+				
 				<ul>
 					<li><a href="#"><i class="fas fa-2x fa-envelope"></i> &nbsp;&nbsp;&nbsp;CONTÁCTANOS</a></li>
 					<li><a href="#"><i class="fas fa-phone fa-2x"></i>	&nbsp;&nbsp;&nbsp;LLÁMANOS</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#winUbicanos"><i class="fas fa-2x fa-map-marker-alt"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UBÍCANOS</a></li>
+					<?php ubicanos_linkUbicanos(); ?>
 					
 				</ul>
 			</div>
@@ -57,35 +58,6 @@
 		<?= date("Y") ?>
 	</div>
 </div>
-
-
-<!-- Ubicanos -->
-	<div class="modal modal-na fade" id="winUbicanos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-body">
-					<div class="row">
-						<div class="col-xs-12 col-sm-8 barraDer">
-							<button type="button" class="close visible-xs" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-							<h4>UBICA TU GRUPO</h4>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7628.074386956956!2d-96.72122559999998!3d17.07083330000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1518751179044" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-						</div>
-						<div class="col-xs-12 col-sm-4">
-							<button type="button" class="close hidden-xs" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-							<h4>CONTÁCTANOS</h4>
-							<br /><br />
-							<?php echo do_shortcode('[wpforms id="10"]'); ?>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-<!-- End Ubicanos-->
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
 

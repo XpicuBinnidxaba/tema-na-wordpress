@@ -13,7 +13,7 @@
 	   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
        <div class="container">
          <div class="navbar-header">
-           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".contenido-menu">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
              <span class="sr-only">Desplegar navegación</span>
              <span class="icon-bar"></span>
              <span class="icon-bar"></span>
@@ -31,7 +31,7 @@
              'depth' => 2,
              'container' => 'div',
              'container_class' => 'collapse navbar-collapse contenido-menu',
-             'container_id' => 'bs-example-navbar-collapse-1',
+             'container_id' => 'navbar-ex1-collapse',
              'menu_class' => 'nav navbar-nav',
              #'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
              #'walker' => new wp_bootstrap_navwalker()
@@ -42,12 +42,6 @@
 
      <div class="top-background-image">
        <img src="<?= get_template_directory_uri() ?>/img/FondoNa.jpg" class="img-responsive" />
-     </div>
-
-     <?php echo do_shortcode('[metaslider id="47"]'); ?>
-
-     <div>
-       <h1>PAGE.PHP</h1>
      </div>
 
      <div class="container">

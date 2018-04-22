@@ -30,7 +30,7 @@
 <?php endif; ?>
 <!-- Archivo de barra lateral por defecto -->
 <h3>--------------- INICIO SIDEBAR ---------------</h3>
-<?php get_sidebar(); ?>
+<?php dynamic_sidebar('sidebarx');?>
 <h3>--------------- FIN SIDEBAR ---------------</h3>
 <!-- Archivo de pié global de Wordpress -->
 <?php get_footer(); ?>

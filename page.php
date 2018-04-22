@@ -44,6 +44,8 @@
        <img src="<?= get_template_directory_uri() ?>/img/FondoNa.jpg" class="img-responsive" />
      </div>
 
+     <?php echo do_shortcode('[metaslider id="47"]'); ?>
+
      <div>
        <h1>PAGE.PHP</h1>
      </div>

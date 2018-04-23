@@ -56,7 +56,6 @@
       </section>
     <?php endif; ?>
 
-    <?php dynamic_sidebar('sidebarx');?>
     <?php get_footer(); ?>
   </body>
 </html>

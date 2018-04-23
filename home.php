@@ -115,6 +115,6 @@ wp_nav_menu( array(
 		</div>
 	</div>
 	
-	<?php get_footer(); ?>
+	<?php get_footer(); ?>home
 </body>
 </html>

@@ -45,12 +45,6 @@
 
 			<div class="col-xs-6 col-sm-3 menu">
 				<h3>¿NECESITAS AYUDA?</h3>
-				<?php wp_nav_menu(
-						array(
-							'theme_location' => 'menu_bottom4',
-						)
-					);
-				?>
 				<ul>
 					<li><a href="#"><i class="fas fa-2x fa-envelope"></i> &nbsp;&nbsp;&nbsp;CONTÁCTANOS</a></li>
 					<li><a href="#"><i class="fas fa-phone fa-2x"></i>	&nbsp;&nbsp;&nbsp;LLÁMANOS</a></li>
@@ -91,7 +85,7 @@
 							</button>
 							<h4>CONTÁCTANOS</h4>
 							<br /><br />
-							<?php echo do_shortcode('[wpforms id="10"]'); ?>
+							<?php dynamic_sidebar('ContactForm-Widget');?>
 						</div>
 					</div>
 				</div>

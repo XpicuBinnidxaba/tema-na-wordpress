@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <body class="uno">
-	<div class="navbar menuPrincipal">
+	<div class="navbar navbar-fixed-top menuPrincipal">
 		<div class="navbar-header">
 			<a class="brand" href="#"><img src="<?= get_template_directory_uri() ?>/img/LogoNA.png" alt="Neuróticos Anónimos"></a>
 			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
@@ -25,7 +25,7 @@ wp_nav_menu( array(
 ?>
 	</div>
 	
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<div id="carrusel" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 			<li data-target="#myCarousel" data-slide-to="1"></li>

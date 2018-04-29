@@ -1,10 +1,10 @@
 .uno{
 	.menuPrincipal{
-		height: 130px;
 		margin-bottom: 0px;
+		background: white;
 		
 		@media (max-width: @mq-xs-max){
-			height: 80px;
+			height: @heightMenuTop;
 		}
 		
 		.navbar-header{
@@ -20,28 +20,62 @@
 					margin: 10px;
 					width: 150px;
 					@media (max-width: @mq-xs-max){
-						width: 100px;
+						//width: 100px;
+						width: auto;
+						max-height: @heightMenuTop - 20px;
 					}
 				}
 			}
-		}	
+			
+			.navbar-toggle{
+				margin-top: 16px;
+				color: @naranja;
+				font-size: 20px;
+			}
+		}		
+	}
+	
+	.navbar-collapse{
+		position: fixed;
+		top: @heightMenuTop + 20px;
+		z-index: 2000;
+		width: 100%;
+		padding-left: 0px;
+		padding-right: 0px;
+			
+		@media (max-width: @mq-xs-max){
+			padding-top: @heightMenuTop;
+			background: @gris2;
+			height: 100%;
+			position: fixed;
+			top: 0px;
+			z-index: 100;
+		}
 		
-		.navbar-collapse{
-			ul.nav{
-				text-align: center;
-				li{
-					display: inline;
+		ul.nav{
+			text-align: center;
+			width: 100%;
+			background: white;
+			li{
+				color: @naranja;
+				display:inline-block;
+				
+				@media (max-width: @mq-xs-max){
+					float: left;
 					width: 100%;
-					a{
-						color: @naranja;
-						text-transform: uppercase;
-						display:inline-block;
-						padding:10px;
-						font-weight: bold;
-					}
+					color: white;
+					text-align: left;
+				}
+				
+				a{
+					color: @naranja;
+					text-transform: uppercase;
+					display:inline-block;
+					padding:10px;
+					font-weight: bold;
 				}
 			}
-		}	
+		}
 	}
 	
 	.carousel{
@@ -49,6 +83,11 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position:center bottom;
+		margin-top: @heightMenuTop + 40px;
+		
+		@media (max-width: @mq-xs-max){
+			margin-top: @heightMenuTop;
+		}
 		
 		.item{
 			height: 550px;

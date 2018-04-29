@@ -10,21 +10,7 @@
   <?php get_header(); ?>
 
   <body class="pagina2">
-	   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-       <div class="container">
-         <div class="navbar-header">
-           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-             <span class="sr-only">Desplegar navegación</span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-             <span class="icon-bar"></span>
-           </button>
-           <a class="navbar-brand" href="#">
-             <img src="<?= get_template_directory_uri() ?>/img/LogoNA.png" alt="Logo N.A.">
-           </a>
-         </div>
-
-         <?php
+  	<?php
            wp_nav_menu( array(
              'menu' => 'primary',
              'theme_location' => 'menu_principal',
@@ -37,6 +23,20 @@
              #'walker' => new wp_bootstrap_navwalker()
            ));
          ?>
+
+	   <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+       <div class="container">
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex1-collapse">
+             <span class="sr-only">Desplegar navegación</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+           <a class="navbar-brand" href="#">
+             <img src="<?= get_template_directory_uri() ?>/img/LogoNA.png" alt="Logo N.A.">
+           </a>
+         </div>
        </div>
      </nav>
 

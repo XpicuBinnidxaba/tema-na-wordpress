@@ -1,7 +1,7 @@
 (function($){
 	
 	$(window).on('scroll', function(){
-		var altura = $(".pagina2").find(".top-background-image").find("img").height();
+		var altura = $(".pagina2").find(".top-background-image").height();
 		
 		if ( $(window).scrollTop() > altura ){
 			$(".pagina2").find('.navbar-fixed-top').addClass('scrollTop');

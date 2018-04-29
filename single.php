@@ -23,7 +23,6 @@
              <img src="<?= get_template_directory_uri() ?>/img/LogoNA.png" alt="Logo N.A.">
            </a>
          </div>
-
          <?php
            wp_nav_menu( array(
              'menu' => 'primary',

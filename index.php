@@ -1,28 +1,28 @@
 <?php get_header(); ?>
 
 <body class="uno">
-	<div class="navbar menuPrincipal">
+	<?php
+	wp_nav_menu(
+		array(
+			'menu' => 'primary',
+			'theme_location' => 'menu_principal',
+			'depth' => 2,
+			'container' => 'div',
+			'container_class' => 'collapse navbar-collapse contenido-menu',
+			'container_id' => 'navbar-ex1-collapse',
+			'menu_class' => 'nav',
+			#'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+			#'walker' => new wp_bootstrap_navwalker()
+		)
+	);
+	?>
+	<div class="navbar navbar-fixed-top menuPrincipal">
 		<div class="navbar-header">
 			<a class="brand" href="#"><img src="<?= get_template_directory_uri() ?>/img/LogoNA.png" alt="Neuróticos Anónimos"></a>
 			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex1-collapse">
 				<i class="fa fa-bars"></i>
 			</button>
 		</div>
-		<?php
-
-wp_nav_menu( array(
-  'menu' => 'primary',
-  'theme_location' => 'menu_principal',
-  'depth' => 2,
-  'container' => 'div',
-  'container_class' => 'collapse navbar-collapse contenido-menu',
-  'container_id' => 'navbar-ex1-collapse',
-  'menu_class' => 'nav',
-  #'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-  #'walker' => new wp_bootstrap_navwalker()
-  )
-);
-?>
 	</div>
 
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -64,7 +64,7 @@ wp_nav_menu( array(
 					</p>
 				</div>
 				<div class="col-sm-4">
-					<img src="img/mundo.png" class="img-responsive" />
+					<img src="<?= get_template_directory_uri() ?>/img/mundo.png" class="img-responsive" />
 				</div>
 			</div>
 			<br />

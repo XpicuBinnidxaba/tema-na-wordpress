@@ -1,44 +1,44 @@
 <?php get_header(); ?>
 
 <body class="uno">
+	<?php
+	wp_nav_menu(
+		array(
+			'menu' => 'primary',
+			'theme_location' => 'menu_principal',
+			'depth' => 2,
+			'container' => 'div',
+			'container_class' => 'collapse navbar-collapse contenido-menu',
+			'container_id' => 'navbar-ex1-collapse',
+			'menu_class' => 'nav',
+			#'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
+			#'walker' => new wp_bootstrap_navwalker()
+		)
+	);
+	?>
 	<div class="navbar navbar-fixed-top menuPrincipal">
 		<div class="navbar-header">
 			<a class="brand" href="#"><img src="<?= get_template_directory_uri() ?>/img/LogoNA.png" alt="Neuróticos Anónimos"></a>
-			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+			    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex1-collapse">
 				<i class="fa fa-bars"></i>
 			</button>
 		</div>
-		<?php
-
-wp_nav_menu( array(
-  'menu' => 'primary',
-  'theme_location' => 'menu_principal',
-  'depth' => 2,
-  'container' => 'div',
-  'container_class' => 'collapse navbar-collapse contenido-menu',
-  'container_id' => 'bs-example-navbar-collapse-1',
-  'menu_class' => 'nav',
-  #'fallback_cb' => 'wp_bootstrap_navwalker::fallback',
-  #'walker' => new wp_bootstrap_navwalker()
-  )
-);
-?>
 	</div>
-	
-	<div id="carrusel" class="carousel slide" data-ride="carousel">
+
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 			<li data-target="#myCarousel" data-slide-to="1"></li>
 			<li data-target="#myCarousel" data-slide-to="2"></li>
 		</ol>
-		
+
 		<div class="carousel-inner">
 			<div class="item active">
 				<div class="descripcion col-xs-12 col-sm-8 col-sm-offset-2">
 					<h1>¿Quienes somos?</h1>
 					<p>Somos hombres y mujeres que hemos descubierto y admitido que no podemos controlar nuestras emociones. Tenemos un solo propósito:</p>
 					<p>Mantener nuestra condición emocional y ayudar a otros a recuperarse de la Neurosis</p>
-					
+
 					<a href="#" data-toggle="modal" data-target="#winUbicanos" class="btn btn-warning">Contáctanos</a>
 				</div>
 			</div>
@@ -52,7 +52,7 @@ wp_nav_menu( array(
 		</div>
 
 	</div>
-		
+
 	<div class="body">
 		<div class="container">
 			<h1>¿Que es la neurosis?</h1>
@@ -64,7 +64,7 @@ wp_nav_menu( array(
 					</p>
 				</div>
 				<div class="col-sm-4">
-					<img src="img/mundo.png" class="img-responsive" />
+					<img src="<?= get_template_directory_uri() ?>/img/mundo.png" class="img-responsive" />
 				</div>
 			</div>
 			<br />
@@ -78,10 +78,10 @@ wp_nav_menu( array(
 						<i class="fa fa-circle fa-stack-2x"></i>
 						<i class="fa fa-home fa-stack-1x fa-inverse"></i>
 					</span>
-					
+
 					<span class="nombre">Casa Hogar</span>
 				</div>
-				
+
 				<div class="col-xs-6 col-sm-3 item">
 					<span class="fa-stack fa-5x">
 						<i class="fa fa-circle fa-stack-2x"></i>
@@ -89,7 +89,7 @@ wp_nav_menu( array(
 					</span>
 					<span class="nombre">Visitas a domicilio</span>
 				</div>
-				
+
 				<div class="col-xs-6 col-sm-3 item">
 					<span class="fa-stack fa-5x">
 						<i class="fa fa-circle fa-stack-2x"></i>
@@ -97,7 +97,7 @@ wp_nav_menu( array(
 					</span>
 					<span class="nombre">Guardería</span>
 				</div>
-				
+
 				<div class="col-xs-6 col-sm-3 item">
 					<span class="fa-stack fa-5x">
 						<i class="fa fa-circle fa-stack-2x"></i>
@@ -114,7 +114,7 @@ wp_nav_menu( array(
 			</div>
 		</div>
 	</div>
-	
-	<?php get_footer(); ?>home
+
+	<?php get_footer(); ?>
 </body>
 </html>

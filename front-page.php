@@ -74,36 +74,32 @@
 			</p>
 			<div class="row servicios">
 				<div class="col-xs-6 col-sm-3 item">
-					<span class="fa-stack fa-5x">
-						<i class="fa fa-circle fa-stack-2x"></i>
-						<i class="fa fa-home fa-stack-1x fa-inverse"></i>
-					</span>
+					<div class="icono">
+						<i class="fa fa-home fa-inverse fa-3x"></i>
+					</div>
 
-					<span class="nombre">Casa Hogar</span>
+					<div class="nombre">Casa Hogar</div>
 				</div>
 
 				<div class="col-xs-6 col-sm-3 item">
-					<span class="fa-stack fa-5x">
-						<i class="fa fa-circle fa-stack-2x"></i>
-						<i class="fa fa-building fa-stack-1x fa-inverse"></i>
-					</span>
-					<span class="nombre">Visitas a domicilio</span>
+					<div class="icono">
+						<i class="fa fa-building fa-inverse fa-3x"></i>
+					</div>
+					<div class="nombre">Visitas a domicilio</div>
 				</div>
 
 				<div class="col-xs-6 col-sm-3 item">
-					<span class="fa-stack fa-5x">
-						<i class="fa fa-circle fa-stack-2x"></i>
-						<i class="fa fa-cubes fa-stack-1x fa-inverse"></i>
-					</span>
-					<span class="nombre">Guardería</span>
+					<div class="icono">
+						<i class="fa fa-cubes fa-inverse fa-3x"></i>
+					</div>
+					<div class="nombre">Guardería</div>
 				</div>
 
 				<div class="col-xs-6 col-sm-3 item">
-					<span class="fa-stack fa-5x">
-						<i class="fa fa-circle fa-stack-2x"></i>
-						<i class="fa fa-child fa-stack-1x fa-inverse"></i>
-					</span>
-					<span class="nombre">Neura-teen</span>
+					<div class="icono">
+						<i class="fa fa-child fa-inverse fa-3x"></i>
+					</div>
+					<div class="nombre">Neura-teen</div>
 				</div>
 				<div class="col-xs-12">
 					<br />

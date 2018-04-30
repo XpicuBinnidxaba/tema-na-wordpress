@@ -41,7 +41,7 @@
      </nav>
 
      <div class="top-background-image">
-       <img src="<?= get_template_directory_uri() ?>/img/FondoNa.jpg" class="img-responsive" />
+       <img src="<?= get_template_directory_uri() ?>/img/FondoNA.jpg" class="img-responsive" />
      </div>
 
      <div class="container">

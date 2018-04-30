@@ -144,13 +144,37 @@
 		.servicios{
 			.item{
 				text-align: center;
+				height: 150px;
+				margin-bottom: 30px;
 				
-				span{
-					width: 100%;
-					&.nombre{
-						color: @rojo;
-						font-size: 16px;
+				&:hover{
+					.icono{
+						border: 3px solid @naranja;
 					}
+				}
+				
+				.icono{
+					width: 100px;
+					height: 100px;
+					background: @gris;
+					position: absolute;
+					left: 50%;
+					margin-left: -50px;
+					border-radius: 50%;
+					border: 3px solid red;
+					
+					svg{
+						margin-top: 20px;
+					}
+				}
+				
+				div.nombre{
+					width: 100%;
+					color: @rojo;
+					font-size: 16px;
+					position: absolute;
+					bottom: 0px;
+					left: 0px;
 				}
 			}
 		}

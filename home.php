@@ -74,7 +74,7 @@
 			</p>
 			<div class="row servicios">
 				<div class="col-xs-6 col-sm-3 item">
-					<span class="fa-stack fa-5x">
+					<span class="fa-stack fa-2x">
 						<i class="fa fa-circle fa-stack-2x"></i>
 						<i class="fa fa-home fa-stack-1x fa-inverse"></i>
 					</span>

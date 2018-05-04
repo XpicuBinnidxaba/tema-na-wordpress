@@ -73,44 +73,21 @@
 				El <span class="text-danger">Movimiento Buena Voluntad 24 horas. de Neuróticos Anónimos</span> presta servicios de ayuda los 265 días del año. Algunos son
 			</p>
 			<div class="row servicios">
-				<div class="col-xs-6 col-sm-3 item">
-					<span class="fa-stack fa-2x">
-						<i class="fa fa-circle fa-stack-2x"></i>
-						<i class="fa fa-home fa-stack-1x fa-inverse"></i>
-					</span>
-
-					<span class="nombre">Casa Hogar</span>
-				</div>
-
-				<div class="col-xs-6 col-sm-3 item">
-					<span class="fa-stack fa-5x">
-						<i class="fa fa-circle fa-stack-2x"></i>
-						<i class="fa fa-building fa-stack-1x fa-inverse"></i>
-					</span>
-					<span class="nombre">Visitas a domicilio</span>
-				</div>
-
-				<div class="col-xs-6 col-sm-3 item">
-					<span class="fa-stack fa-5x">
-						<i class="fa fa-circle fa-stack-2x"></i>
-						<i class="fa fa-cubes fa-stack-1x fa-inverse"></i>
-					</span>
-					<span class="nombre">Guardería</span>
-				</div>
-
-				<div class="col-xs-6 col-sm-3 item">
-					<span class="fa-stack fa-5x">
-						<i class="fa fa-circle fa-stack-2x"></i>
-						<i class="fa fa-child fa-stack-1x fa-inverse"></i>
-					</span>
-					<span class="nombre">Neura-teen</span>
-				</div>
+				<?php
+					if (function_exists("getPrincipalesServicios"))
+						getPrincipalesServicios();
+				?>
 				<div class="col-xs-12">
 					<br />
-					<br />
-					<br />
-					<a href="#" class="btn btn-link btn-lg btn-block">Conoce nuestros demás servicios</a>
+					<button class="btn btn-link btn-lg btn-block" id="btnDemasServicios">Conoce nuestros demás servicios</button>
 				</div>
+			</div>
+			
+			<div class="row servicios demasServicios" style="display: none">
+				<?php
+					if (function_exists("getDemasServicios"))
+						getDemasServicios();
+				?>
 			</div>
 		</div>
 	</div>

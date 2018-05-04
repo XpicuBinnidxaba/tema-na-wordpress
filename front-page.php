@@ -73,40 +73,21 @@
 				El <span class="text-danger">Movimiento Buena Voluntad 24 horas. de Neuróticos Anónimos</span> presta servicios de ayuda los 265 días del año. Algunos son
 			</p>
 			<div class="row servicios">
-				<div class="col-xs-6 col-sm-3 item">
-					<div class="icono">
-						<i class="fa fa-home fa-inverse fa-3x"></i>
-					</div>
-
-					<div class="nombre">Casa Hogar</div>
-				</div>
-
-				<div class="col-xs-6 col-sm-3 item">
-					<div class="icono">
-						<i class="fa fa-building fa-inverse fa-3x"></i>
-					</div>
-					<div class="nombre">Visitas a domicilio</div>
-				</div>
-
-				<div class="col-xs-6 col-sm-3 item">
-					<div class="icono">
-						<i class="fa fa-cubes fa-inverse fa-3x"></i>
-					</div>
-					<div class="nombre">Guardería</div>
-				</div>
-
-				<div class="col-xs-6 col-sm-3 item">
-					<div class="icono">
-						<i class="fa fa-child fa-inverse fa-3x"></i>
-					</div>
-					<div class="nombre">Neura-teen</div>
-				</div>
+				<?php
+					if (function_exists("getPrincipalesServicios"))
+						getPrincipalesServicios();
+				?>
 				<div class="col-xs-12">
 					<br />
-					<br />
-					<br />
-					<a href="#" class="btn btn-link btn-lg btn-block">Conoce nuestros demás servicios</a>
+					<button class="btn btn-link btn-lg btn-block" id="btnDemasServicios">Conoce nuestros demás servicios</button>
 				</div>
+			</div>
+			
+			<div class="row servicios demasServicios" style="display: none">
+				<?php
+					if (function_exists("getDemasServicios"))
+						getDemasServicios();
+				?>
 			</div>
 		</div>
 	</div>

@@ -1,0 +1,37 @@
+[
+	{
+		"nombre": "Casa Hogar",
+		"icono": "fa-home",
+		"uri": "2018/04/30/casa-hogar/"
+	},
+	{
+		"nombre": "Visitas a domicilio",
+		"icono": "fa-building",
+		"uri": "2018/04/30/visitas-domiciliadas/"
+	},
+	{
+		"nombre": "Guardería",
+		"icono": "fa-cubes",
+		"uri": "2018/04/30/guarderia/"
+	},
+	{
+		"nombre": "Neurateen",
+		"icono": "fa-child",
+		"uri": "2018/04/30/neur-a-teen/"
+	},	
+	{
+		"nombre": "Sesiones de terapia",
+		"icono": "fa-users",
+		"uri": "servicio"
+	},
+	{
+		"nombre": "Apertura de grupos",
+		"icono": "fa-university",
+		"uri": "servicio"
+	},
+	{
+		"nombre": "Transmisión del mensaje",
+		"icono": "fa-handshake-o",
+		"uri": "servicio"
+	}
+]

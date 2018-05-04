@@ -46,9 +46,9 @@
 			<div class="col-xs-6 col-sm-3 menu">
 				<h3>¿NECESITAS AYUDA?</h3>
 				<ul>
-					<li><a href="#"><i class="fas fa-2x fa-envelope"></i> &nbsp;&nbsp;&nbsp;CONTÁCTANOS</a></li>
-					<li><a href="#"><i class="fas fa-phone fa-2x"></i>	&nbsp;&nbsp;&nbsp;LLÁMANOS</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#winUbicanos"><i class="fas fa-2x fa-map-marker-alt"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UBÍCANOS</a></li>
+					<li><a href="#"><i class="fa fa-2x fa-envelope"></i> &nbsp;&nbsp;&nbsp;CONTÁCTANOS</a></li>
+					<li><a href="tel:+529515130280"><i class="fa fa-phone fa-2x"></i>	&nbsp;&nbsp;&nbsp;LLÁMANOS</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#winUbicanos"><i class="fa fa-2x fa-map-marker"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UBÍCANOS</a></li>
 
 				</ul>
 			</div>
@@ -95,8 +95,9 @@
 <!-- End Ubicanos-->
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
+<link rel='stylesheet' id='fontawesome-css'  href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css' type='text/css' media='all' />
 
-<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<!--<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>-->
 
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">

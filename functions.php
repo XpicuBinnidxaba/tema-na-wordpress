@@ -27,4 +27,5 @@ add_action( 'wp_enqueue_scripts', 'additional_custom_styles');
 
 include_once("framework/menus.php");
 include_once("framework/widgets.php");
+include_once("framework/excerpt.php");
 ?>

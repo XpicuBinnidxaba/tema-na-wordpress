@@ -8,15 +8,6 @@
  */
 ?>
 
-<?php
-/**
- * The page template file
- *
- * @package WordPress
- * @subpackage Tema_NA
- * @since Tema NA 1.0
- */
-?>
   <?php get_header(); ?>
 
   <body class="pagina2">
@@ -54,7 +45,7 @@
        <img src="<?= get_template_directory_uri() ?>/img/FondoNA.jpg" class="img-responsive" />
      </div>
 
-     <div class="container">
+     <div class="container category-template">
        <div class="row">
          <div class="col-sm-12 col-md-9">
 
@@ -67,10 +58,10 @@
     					       <article>
     					         <header>
     					           <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-    					           <time datatime="<?php the_time('Y-m-j'); ?>"><?php the_time('j F, Y'); ?></time>
-    					 					<?php the_category (); ?>
     					         </header>
-    					         <?php the_excerpt(); ?>
+                       <div class="excerpt">
+                         <?php the_excerpt(); ?>
+                       </div>
     					         <footer>
     					             <address>Por <?php the_author_posts_link() ?></address>
     					         </footer>
@@ -87,9 +78,6 @@
 					 <?php endif; ?>
 
          </div>
-         <div class="col-xs-12 col-sm-3"><!-- INICIO ELEMENTO MEDIA -->
-            <?php dynamic_sidebar('sidebar');?>
-        </div><!-- FIN ELEMENTO MEDIA -->
        </div>
      </div>
 

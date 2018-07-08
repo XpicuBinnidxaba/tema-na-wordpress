@@ -62,9 +62,6 @@
                        <div class="excerpt">
                          <?php the_excerpt(); ?>
                        </div>
-    					         <footer>
-    					             <address>Por <?php the_author_posts_link() ?></address>
-    					         </footer>
     					       </article>
                    </div>
   				     <?php endwhile; ?>

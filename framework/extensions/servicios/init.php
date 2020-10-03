@@ -13,4 +13,5 @@ function addThemeServicios(){
 add_action('wp_enqueue_scripts', 'addThemeServicios');
 
 include_once($extensionsDirectory.'/servicios/getServicios.php');
+include_once($extensionsDirectory.'/servicios/pagina.php');
 ?>

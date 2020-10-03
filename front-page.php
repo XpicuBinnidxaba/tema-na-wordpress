@@ -2,6 +2,10 @@
 
 <body class="uno">
 	<?php
+		if (function_exists("na_preload"))
+			na_preload();
+	?>
+	<?php
 	wp_nav_menu(
 		array(
 			'menu' => 'primary',
@@ -25,6 +29,7 @@
 		</div>
 	</div>
 
+
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -33,25 +38,34 @@
 		</ol>
 
 		<div class="carousel-inner">
-			<div class="item active">
+
+			<div class="item item1 active">
 				<div class="descripcion col-xs-12 col-sm-8 col-sm-offset-2">
-					<h1>¿Quienes somos?</h1>
-					<p>Somos hombres y mujeres que hemos descubierto y admitido que no podemos controlar nuestras emociones. Tenemos un solo propósito:</p>
+					<h1>Tiene problemas</h1>
+					<p>Aqui encontrará hombres y mujeres que hemos descubierto y admitido que no podemos controlar nuestras emociones. Tenemos un solo propósito:</p>
 					<p>Mantener nuestra condición emocional y ayudar a otros a recuperarse de la Neurosis</p>
 
 					<a href="#" data-toggle="modal" data-target="#winUbicanos" class="btn btn-warning">Contáctanos</a>
 				</div>
 			</div>
-			<div class="item">
+			<div class="item item2">
 				<div class="descripcion col-xs-12 col-sm-8 col-sm-offset-2">
-					<h1>¿Quienes somos?</h1>
-					<p>Somos hombres y mujeres que hemos descubierto y admitido que no podemos controlar nuestras emociones. Tenemos un solo propósito:</p>
-					<p>Mantener nuestra condición emocional y ayudar a otros a recuperarse de la Neurosis</p>
+					<h1>Depresión</h1>
+					<p>¿Se ha sentido triste por un tiempo prolongado? Algunas veces es provocado por miedos, angustia, sentirse aislado... existe una solución</p>
+					<a href="#" data-toggle="modal" data-target="#winUbicanos" class="btn btn-warning">Contáctanos</a>
+				</div>
+			</div>
+			<div class="item item3">
+				<div class="descripcion col-xs-12 col-sm-8 col-sm-offset-2">
+					<h1>Jóvenes y niños</h1>
+					<p>Ayudamos a jóvenes y niños de 8 a 16 años de edad que han sido afectados por los problemas de familiares, amigos o conocidos</p>
+
 				</div>
 			</div>
 		</div>
 
 	</div>
+
 
 	<div class="body">
 		<div class="container">
@@ -70,7 +84,7 @@
 			<br />
 			<h1>Nuestros servicios</h1>
 			<p>
-				El <span class="text-danger">Movimiento Buena Voluntad 24 horas. de Neuróticos Anónimos</span> presta servicios de ayuda los 265 días del año. Algunos son
+				El <span class="text-danger">Movimiento Buena Voluntad 24 horas. de Neuróticos Anónimos</span> presta servicios de ayuda los 365 días del año. Algunos son
 			</p>
 			<div class="row servicios">
 				<?php
@@ -82,7 +96,7 @@
 					<button class="btn btn-link btn-lg btn-block" id="btnDemasServicios">Conoce nuestros demás servicios</button>
 				</div>
 			</div>
-			
+
 			<div class="row servicios demasServicios" style="display: none">
 				<?php
 					if (function_exists("getDemasServicios"))

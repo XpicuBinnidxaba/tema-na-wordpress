@@ -2,11 +2,11 @@
 	.menuPrincipal{
 		margin-bottom: 0px;
 		background: white;
-		
+
 		@media (max-width: @mq-xs-max){
 			height: @heightMenuTop;
 		}
-		
+
 		.navbar-header{
 			@media (max-width: @mq-xs-max){
 				text-align: left;
@@ -14,7 +14,7 @@
 			text-align: center;
 			width: 100%;
 			font-family: Roboto;
-			
+
 			.brand{
 				img{
 					margin: 10px;
@@ -26,15 +26,15 @@
 					}
 				}
 			}
-			
+
 			.navbar-toggle{
 				margin-top: 16px;
 				color: @naranja;
 				font-size: 20px;
 			}
-		}		
+		}
 	}
-	
+
 	.navbar-collapse{
 		position: fixed;
 		top: @heightMenuTop + 20px;
@@ -42,7 +42,7 @@
 		width: 100%;
 		padding-left: 0px;
 		padding-right: 0px;
-			
+
 		@media (max-width: @mq-xs-max){
 			padding-top: @heightMenuTop;
 			background: @gris2;
@@ -51,7 +51,7 @@
 			top: 0px;
 			z-index: 100;
 		}
-		
+
 		ul.nav{
 			text-align: center;
 			width: 100%;
@@ -59,14 +59,14 @@
 			li{
 				color: @naranja;
 				display:inline-block;
-				
+
 				@media (max-width: @mq-xs-max){
 					float: left;
 					width: 100%;
 					color: white;
 					text-align: left;
 				}
-				
+
 				a{
 					color: @naranja;
 					text-transform: uppercase;
@@ -77,82 +77,117 @@
 			}
 		}
 	}
-	
+
 	.carousel{
-		background-image: url('img/slider4.jpg');
-		background-repeat: no-repeat;
-		background-size: cover;
-		background-position:center bottom;
 		margin-top: @heightMenuTop + 40px;
-		
+
 		@media (max-width: @mq-xs-max){
 			margin-top: @heightMenuTop;
 		}
-		
+
 		.item{
-			height: 550px;
+		    background-image: url('img/slider4.jpg');
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		    background-position:center top;
+			height: 600px;
 			overflow-y: hidden;
-			
+
+			&.item1{
+				background-image: url('img/slider-principal1.jpg');
+				.descripcion{
+					p{
+						background: rgba(82, 188, 104, 0.3);
+					}
+				}
+			}
+
+			&.item2{
+			    background-image: url('img/slider-principal2.jpg');
+			    .descripcion{
+			    	h1{
+				    	color: @naranja;
+			    	}
+			        p{
+			        	background: rgba(247, 129, 26, 0.3);
+			        }
+			    }
+			    color: black;
+			}
+			&.item3{
+			    background-image: url('img/slider-principal3.jpg');
+
+			    .descripcion{
+			    	h1{
+				    	color: black;
+			    	}
+				    p{
+						background: rgba(206, 206, 206, 0.3);
+						color: black;
+					}
+			    }
+			}
+
 			.descripcion{
 				text-align: center;
 				position: absolute;
 				top: 10%;
 				height: 80%;
-				overflow-y: scroll;
-				
+
+
 				h1{
 					color: white;
 					font-size: 45px;
 					margin-bottom: 50px;
 				}
-				
+
 				p{
-					font-size: 20px;
+					font-size: 24px;
 					color: @grisBackground;
-					
+
 					@media (max-width: @mq-xs-max){
 						font-size: 16px;
 					}
 				}
 			}
-			
+
 			.btn{
 				text-transform: uppercase;
 			}
 		}
 	}
-	
+
 	.body{
 		min-height: 300px;
 		padding-top: 50px;
 		padding-bottom: 50px;
 		background: @grisBackground;
 		font-size: 16px;
-		
+
 		img.img-responsive{
 			margin: 0 auto;
 		}
-		
+
 		p{
 			margin-bottom: 20px;
 		}
-		
+
 		h1{
 			color: @naranja;
 		}
-		
+
 		.servicios{
 			.item{
 				text-align: center;
 				height: 150px;
 				margin-bottom: 30px;
-				
+
 				&:hover{
 					.icono{
 						border: 3px solid @naranja;
 					}
 				}
-				
+
 				.icono{
 					width: 100px;
 					height: 100px;
@@ -162,12 +197,12 @@
 					margin-left: -50px;
 					border-radius: 50%;
 					border: 3px solid red;
-					
+
 					i{
 						margin-top: 20px;
 					}
 				}
-				
+
 				div.nombre{
 					width: 100%;
 					color: @rojo;

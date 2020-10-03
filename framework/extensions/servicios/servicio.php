@@ -1,4 +1,4 @@
-<a href="<?= $servicio->uri ?>">
+<a href="<?= get_site_url() ?>/<?= $servicio->uri ?>">
 <div class="col-xs-6 col-sm-3 item">
 	<div class="icono">
 		<i class="fa <?= $servicio->icono ?> fa-inverse fa-3x"></i>

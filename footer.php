@@ -14,8 +14,11 @@
 <div class="footer">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-6 col-sm-3 menu">
-				<h3>Acerca de neuróticos anónimos</h3>
+			<div class="col-xs-12 col-sm-3 contenedorMenu">
+				<?php dynamic_sidebar('theme_infoContacto');?>
+			</div>
+			<div class="col-xs-12 col-sm-3 contenedorMenu">
+				<h3>Enlaces de interes</h3>
 				<?php
 					wp_nav_menu(
 						array(
@@ -23,26 +26,16 @@
 						)
 					);
 				?>
-			</div>
-			<div class="col-xs-6 col-sm-3 menu">
-				<h3>Servicios</h3>
-				<?php wp_nav_menu(
-						array(
-							'theme_location' => 'menu_bottom2',
-						)
-					);
-				?>
-			</div>
-			<div class="col-xs-6 col-sm-3 menu">
-				<h3>Grupos</h3>
-				<?php wp_nav_menu(
-						array(
-							'theme_location' => 'menu_bottom3',
-						)
-					);
-				?>
-			</div>
+				<ul>
+					<li><a href="tel:+529515130280">Llámenos ahora</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#winUbicanos">Ubique nuestros grupos en el estado</a></li>
 
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-6 contenedorMenu">
+				<?php dynamic_sidebar('theme_acercaDe');?>
+			</div>
+			<!--
 			<div class="col-xs-6 col-sm-3 menu">
 				<h3>¿NECESITAS AYUDA?</h3>
 				<ul>
@@ -52,47 +45,21 @@
 
 				</ul>
 			</div>
+			-->
 		</div>
 	</div>
 </div>
 
 <div class="footer datosContacto">
-	<div class="container text-center">
-		Oficina Intergrupal, Calle Margarita Maza de Juarez 218, Colonia Centro, Oaxaca<br />
-		Teléfono +52 951 51 3 02 80<br />
-		grupobvoaxaca@hotmail.com<br />
-		<?= date("Y") ?>
+	<div class="container">
+		Copyright <?= date("Y") ?> Movimiento Buena Voluntad 24 Horas de Neuróticos Anónimos
 	</div>
 </div>
 
 
-<!-- Ubicanos -->
-	<div class="modal modal-na fade" id="winUbicanos" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-lg" role="document">
-			<div class="modal-content">
-				<div class="modal-body">
-					<div class="row">
-						<div class="col-xs-12 col-sm-8 barraDer">
-							<button type="button" class="close visible-xs" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-							<h4>UBICA TU GRUPO</h4>
-							<?php dynamic_sidebar('GoogleMaps-Widget');?>
-						</div>
-						<div class="col-xs-12 col-sm-4">
-							<button type="button" class="close hidden-xs" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-							<h4>CONTÁCTANOS</h4>
-							<br /><br />
-							<?php dynamic_sidebar('ContactForm-Widget');?>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-<!-- End Ubicanos-->
+<?php dynamic_sidebar('GoogleMaps-Widget');?>
+
+<?php dynamic_sidebar('theme_final'); ?>
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet" />
 <link rel='stylesheet' id='fontawesome-css'  href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css' type='text/css' media='all' />

@@ -12,6 +12,10 @@
 
   <body class="pagina2">
   	<?php
+		if (function_exists("na_preload"))
+			na_preload();
+	?>
+  	<?php
            wp_nav_menu( array(
              'menu' => 'primary',
              'theme_location' => 'menu_principal',
@@ -47,13 +51,17 @@
 
      <div class="container category-template">
        <div class="row">
-         <div class="col-sm-12 col-md-9">
+         <div class="col-sm-12 col-md-12">
 
 					 <h1><?php single_cat_title(); ?></h1>
 
 					 <?php if ( have_posts() ) : ?>
              <section>
+             	<?php $cont = 0; ?>
   				     <?php while ( have_posts() ) : the_post(); ?>
+  				     	<?php if ($cont == 0){ ?>
+  				     		<div class="row">
+  				     	<?php }?>
                    <div class="col-sm-12 col-md-4">
     					       <article>
     					         <header>
@@ -63,6 +71,15 @@
                          <?php the_excerpt(); ?>
                        </div>
     					       </article>
+    					    <?php
+    					    	$cont++;
+    					    	if ($cont > 3){ ?>
+    					    	</div>
+    					    <?php
+    					    	}
+    					    	$cont = $cont > 3?0:($cont+1);
+
+    					    ?>
                    </div>
   				     <?php endwhile; ?>
   				     <div class="pagination">

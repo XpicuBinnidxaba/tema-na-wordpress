@@ -1,6 +1,6 @@
 <?php
-/**
- * The page template file
+/*
+ * Template Name: Página Radio
  *
  * @package WordPress
  * @subpackage Tema_NA
@@ -50,7 +50,7 @@
 
      <div class="container">
        <div class="row">
-         <div class="col-xs-12 col-sm-9 ">
+         <div class="col-xs-12 col-sm-12 ">
            <?php if ( have_posts() ) : the_post(); ?>
              <div class="titulo">
                <h1><?php the_title(); ?></h1>
@@ -60,9 +60,6 @@
              </div>
            <?php endif; ?>
          </div>
-         <div class="col-xs-12 col-sm-3"><!-- INICIO ELEMENTO MEDIA -->
-            <?php dynamic_sidebar('sidebar');?>
-        </div><!-- FIN ELEMENTO MEDIA -->
        </div>
      </div>
 

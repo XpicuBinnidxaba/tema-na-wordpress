@@ -2,6 +2,10 @@
 
 <body class="uno">
 	<?php
+		if (function_exists("na_preload"))
+			na_preload();
+	?>
+	<?php
 	wp_nav_menu(
 		array(
 			'menu' => 'primary',
@@ -39,10 +43,10 @@
 					<p>Somos hombres y mujeres que hemos descubierto y admitido que no podemos controlar nuestras emociones. Tenemos un solo propósito:</p>
 					<p>Mantener nuestra condición emocional y ayudar a otros a recuperarse de la Neurosis</p>
 
-					<a href="#" data-toggle="modal" data-target="#winUbicanos" class="btn btn-warning">Contáctanos</a>
+					<a href="#" data-toggle="modal" data-target="#winUbicanos" class="btn btn-warning">Contáctenos</a>
 				</div>
 			</div>
-			<div class="item">
+			<div class="item item2">
 				<div class="descripcion col-xs-12 col-sm-8 col-sm-offset-2">
 					<h1>¿Quienes somos?</h1>
 					<p>Somos hombres y mujeres que hemos descubierto y admitido que no podemos controlar nuestras emociones. Tenemos un solo propósito:</p>
@@ -82,7 +86,7 @@
 					<button class="btn btn-link btn-lg btn-block" id="btnDemasServicios">Conoce nuestros demás servicios</button>
 				</div>
 			</div>
-			
+
 			<div class="row servicios demasServicios" style="display: none">
 				<?php
 					if (function_exists("getDemasServicios"))

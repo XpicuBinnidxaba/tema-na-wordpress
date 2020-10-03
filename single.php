@@ -11,6 +11,10 @@
 
   <body class="pagina2">
   	<?php
+		if (function_exists("na_preload"))
+			na_preload();
+	?>
+  	<?php
            wp_nav_menu( array(
              'menu' => 'primary',
              'theme_location' => 'menu_principal',
@@ -49,16 +53,18 @@
          <div class="col-xs-12 col-sm-9 ">
            <?php if ( have_posts() ) : the_post(); ?>
              <div class="titulo">
-               <h1><?php the_title(); ?></h1>
+               <h1><?php the_title();?></h1>
              </div>
              <div class="cotenido">
                <?php the_content(); ?>
              </div>
            <?php endif; ?>
          </div>
-         <div class="col-xs-12 col-sm-3"><!-- INICIO ELEMENTO MEDIA -->
-            <?php dynamic_sidebar('sidebar');?>
-        </div><!-- FIN ELEMENTO MEDIA -->
+         <div class="col-xs-12 col-sm-3">
+           <div class="single-sidebar">
+             <?php dynamic_sidebar('sidebar');?>
+           </div>
+        </div>
        </div>
      </div>
 

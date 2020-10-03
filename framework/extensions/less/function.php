@@ -1,5 +1,5 @@
 <?php
-class less{	
+class less{
 	/*
 	* Filter
 	* Rebuild link stylesheet to less format in wp_enqueue_styles
@@ -15,7 +15,7 @@ class less{
 		
 			$tag = "<link rel='stylesheet/less' id='".$handle."' ".$title." href='".$href."' type='text/css' media='".$media."' />";
 		}
-		
+
 		return $tag;
 	}
 }

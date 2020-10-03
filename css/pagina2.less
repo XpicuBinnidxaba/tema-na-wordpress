@@ -7,10 +7,22 @@
 		box-shadow:	none;
 
 		&.scrollTop{
-			background-color: @menu_background;
+			background-color: white;
 			background-position: center bottom;
 			background-repeat: no-repeat;
 			background-size: cover;
+			height: 60px;
+			color: white;
+			transition:all 1s ease-out;
+			padding-bottom: 10px;
+
+			.navbar-brand{
+				img{
+					height: 40px;
+					width: 90px;
+					transition: all 1s ease-out;
+				}
+			}
 		}
 	}
 
@@ -19,15 +31,23 @@
 		color: @naranja;
 		position: fixed;
 		top: 0px;
-		left: 260px;
-		z-index: 2050;
+		left: 280px;
+		z-index: 2000;
+
+		.scrollTop{
+			a{
+			//	color: white;
+				padding-bottom: 0px;
+				padding-top: 40px;
+			}
+		}
 
 
 		@media (max-width: @mq-xs-max){
 			height: @heightMenuTop;
 			left: 0px;
-			top: 100px;
-			background: @gris2;
+			top: 80px;
+			background: white;
 			width: 100%;
 			height: 100%;
 		}
@@ -47,8 +67,8 @@
 				a {
 					padding-left: 0.5em;
 					padding-right: 0.5em;
-					padding-top: 3em;
-					padding-bottom: 3em;
+					padding-top: 40px;
+					padding-bottom: 40px;
 					color: @naranja;
 					align-items: center;
 					text-transform: uppercase;
@@ -104,6 +124,7 @@
 
 			img {
 				margin: 10px;
+				margin-right: 20px;
 				width: 150px;
 				@media (max-width: @mq-xs-max) {
 					width: 100px;
@@ -149,7 +170,9 @@
 	.titulo {
 
 	}
-	.cotenido {
+	.contenido {
+		padding-bottom: 70px;
+		padding-top: 30px;
 		p {
 			text-align: justify;
 		}
@@ -162,37 +185,23 @@
 			text-align: justify;
 		}
 	}
-	/* Estilos CATEGORY TEMPLATE*/
 
-	/*INICIO ESTILO CONTENIDO MEDIA*/
-	.media-lista {
-		.media-item {
-			.media-header {
-				.media-imagen {
-					height: 10em;
-					background-position: center top;
-					background-size: cover;
-					background-repeat: no-repeat;
-					background-attachment: scroll;
-				}
-			}
-			.media-descripcion {
-				p {
-					padding-left: 0.5em;
-					padding-right: 0.5em;
-					padding-top: 1em;
-					padding-bottom: 1em;
-					color: @negro;
-					align-items: center;
-					text-align: center;
-					text-transform: uppercase;
-					text-decoration: none;
-					font-size: 16px;
-					font-weight: bold;
+	/*INICIO ESTILO SIDEBAR para SINGLE TEMPLATE*/
+	.single-sidebar {
+		.epyt-gallery {
+			.epyt-gallery-list {
+				.epyt-gallery-allthumbs {
+					.epyt-gallery-thumb {
+						.epyt-gallery-title {
+							@media (min-width: @mq-xs-max) {
+								display: none;
+							}
+						}
+					}
 				}
 			}
 		}
 	}
-	/*FIN ESTILO CONTENIDO MEDIA*/
+	/*FIN ESTILO SIDEBAR*/
 
 }

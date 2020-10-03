@@ -1,23 +1,29 @@
+.modal-backdrop{
+	.in{
+		opacity: 0.3 !important;
+	}
+}
+
 .modal-na{
 	color: @naranja;
-	z-index: 2000 !important;
-	
+	z-index: 2050 !important;
+
 	.barraDer{
 		border-right: 5px solid @naranja;
-		
+
 		@media (max-width: @mq-xs-max){
 			border: none;
 		}
 	}
 	.modal-content{
 		background: @gris;
-		
+
 		.modal-body{
 			padding-top: 0px;
 		}
 	}
-	
-	
+
+
 	form{
 		label{
 			color: @naranja;
@@ -30,8 +36,8 @@
 			border-radius: 10px;
 		}
 	}
-	
-	
+
+
 	.btn-naranja{
 		background: @naranja;
 		color: white;

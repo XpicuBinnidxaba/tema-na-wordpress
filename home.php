@@ -2,6 +2,10 @@
 
 <body class="uno">
 	<?php
+		if (function_exists("na_preload"))
+			na_preload();
+	?>
+	<?php
 	wp_nav_menu(
 		array(
 			'menu' => 'primary',
@@ -25,6 +29,55 @@
 		</div>
 	</div>
 
+	<div class="bar-header">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- HeaderTopAds -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-5750766974376423"
+     data-ad-slot="4802459696"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+        <div class="container bodyBck">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="sticky-container">
+                <ul class="sticky">
+                    <li>
+                        <img src="images/facebook-circle.png" width="32" height="32">
+                        <p><a href="https://www.facebook.com/codexworld" target="_blank">Like Us on<br>Facebook</a></p>
+                    </li>
+                    <li>
+                        <img height="32" src="images/twitter-circle.png" width="32" height="32">
+                        <p><a href="https://twitter.com/codexworldblog" target="_blank">Follow Us on<br>Twitter</a></p>
+                    </li>
+                    <li>
+                        <img src="images/gplus-circle.png" width="32" height="32">
+                        <p><a href="https://plus.google.com/codexworld" target="_blank">Follow Us on<br>Google+</a></p>
+                    </li>
+                    <li>
+                        <img src="images/linkedin-circle.png" width="32" height="32">
+                        <p><a href="https://www.linkedin.com/company/codexworld" target="_blank">Follow Us on<br>LinkedIn</a></p>
+                    </li>
+                    <li>
+                        <img src="images/youtube-circle.png" width="32" height="32">
+                        <p><a href="http://www.youtube.com/codexworld" target="_blank">Subscribe on<br>YouYube</a></p>
+                    </li>
+                    <li>
+                        <img src="images/pin-circle.png" width="32" height="32">
+                        <p><a href="https://www.pinterest.com/codexworld" target="_blank">Follow Us on<br>Pinterest</a></p>
+                    </li>
+                </ul>
+            </div>
+		</div>
+    </div>
+</div>
+
+
 	<div id="myCarousel" class="carousel slide" data-ride="carousel">
 		<ol class="carousel-indicators">
 			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -42,7 +95,7 @@
 					<a href="#" data-toggle="modal" data-target="#winUbicanos" class="btn btn-warning">Contáctanos</a>
 				</div>
 			</div>
-			<div class="item">
+			<div class="item item2">
 				<div class="descripcion col-xs-12 col-sm-8 col-sm-offset-2">
 					<h1>¿Quienes somos?</h1>
 					<p>Somos hombres y mujeres que hemos descubierto y admitido que no podemos controlar nuestras emociones. Tenemos un solo propósito:</p>
@@ -82,7 +135,7 @@
 					<button class="btn btn-link btn-lg btn-block" id="btnDemasServicios">Conoce nuestros demás servicios</button>
 				</div>
 			</div>
-			
+
 			<div class="row servicios demasServicios" style="display: none">
 				<?php
 					if (function_exists("getDemasServicios"))
